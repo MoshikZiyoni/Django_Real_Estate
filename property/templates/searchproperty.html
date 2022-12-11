@@ -24,7 +24,7 @@
              <p>will show the future price of the found properties these years. etc..</p>__
           </div>
         
-        <form action="{% url 'property:result' %}" method="POST" enctype=multipart/form-data name="searchproperty" style= "padding:10px 0px 0px 30px;">
+        <form action="{% url 'property:result' %}" method="POST" enctype=multipart/form-data name="searchproperty" style="position: absolute; margin-left:30px;" >
           {% csrf_token %}
         
             <!-- {{ searchingform.as_table }}   -->
@@ -116,6 +116,7 @@
                   <input type="submit" value = 'Search properties' style="background-color: blueviolet; border-radius: 2em; color: azure; font-weight: 500;">
           
               </form> 
+            
               <div style=" position: absolute;right: 0px;bottom: 0px; ; ; ;"><img src="{% static 'assets/img/Property-Search.jpg' %}"  style="height:400px; width: 500px;"></div>
 
 
