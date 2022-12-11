@@ -1,5 +1,4 @@
 from lib2to3.pgen2.token import GREATEREQUAL
-from math import floor
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import redirect, render
 from django.template import RequestContext, loader
