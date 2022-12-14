@@ -16,15 +16,8 @@
         {% block content %}
         <body style="background-color: burlywood">
           <br>
-
-          <div class="text" style="color: white; font-size: large; font-style: oblique; font-weight: 400; background-color: rgb(218, 153, 32); border-radius: 10em; box-shadow:-11px 24px 62px -13px rgba(0,0,0,0.69) ; text-align: center; position: absolute; right: 30px;" >
-            __ <p >Please search for a property according to your maximum criteria.</p>
-            <p>For example:<br>The max price of 10,000,000 will show all the properties  that are included in this price.</p>
-            <p> max investment range of 7 years</p>
-             <p>will show the future price of the found properties these years. etc..</p>__
-          </div>
-        
-        <form action="{% url 'property:result' %}" method="POST" enctype=multipart/form-data name="searchproperty" style="position: absolute; margin-left:30px;" >
+          <div class="col-sm-6" style="width: 100%;display: flex;flex-direction: row;align-items: center;flex-wrap: wrap; " >        
+        <form action="{% url 'property:result' %}" method="POST" enctype=multipart/form-data name="searchproperty" style= "padding:10px 0px 0px 30px;">
           {% csrf_token %}
         
             <!-- {{ searchingform.as_table }}   -->
@@ -111,14 +104,21 @@
                 {{ searchingform.investment_range }}
                 
             </div>
-<br>
+            <br>
 
                   <input type="submit" value = 'Search properties' style="background-color: blueviolet; border-radius: 2em; color: azure; font-weight: 500;">
           
               </form> 
-            
-              <div style=" position: absolute;right: 0px;bottom: 0px; ; ; ;"><img src="{% static 'assets/img/Property-Search.jpg' %}"  style="height:250px; width: 300px;"></div>
-
+              <div class="text" style="color: white; font-size: large; font-style: oblique; font-weight: 400; background-color: rgb(218, 153, 32); border-radius: 10em; box-shadow:-11px 24px 62px -13px rgba(0,0,0,0.69) ; text-align: center; " >
+                __ <p >Please search for a property according to your maximum criteria.</p>
+                <p>For example:<br>The max price of 10,000,000 will show all the properties  that are included in this price.</p>
+                <p> max investment range of 7 years</p>
+                 <p>will show the future price of the found properties these years. etc..</p>__
+              </div>
+            </div>
+              <div class="card-body" style=" position: relative; display: flex;justify-content:flex-end;" >
+              <div ><img src="{% static 'assets/img/Property-Search.jpg' %}"  style="height:400px; width: 500px;"></div>
+            </div>
 
 
         {% endblock %}     
