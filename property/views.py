@@ -174,7 +174,7 @@ def single_apt(request,id):
     return render(request, 'single-property.html', {'property':property,'final_proj':final_proj})
     
 
-##This function for single projcet
+##This function for single projcets
 def single_project(request,id):
     project = Project.objects.get(id=id)
     

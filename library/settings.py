@@ -31,7 +31,7 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com','localhost:3000']
 ALLOWED_HOSTS=['*']
-# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -64,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
 ]
-# CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'library.urls'
 
