@@ -17,8 +17,8 @@
           Results Found:
       </div>
       <div class="card-body">
-          <!-- <table id="datatablesSimple"> -->
-            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+          <table id="datatablesSimple" class="table table-bordered"  width="100%" cellspacing="0">
+            <!-- <table id="dataTable" class="table table-bordered"  width="100%" cellspacing="0"> -->
 
             <thead>
                   <tr>
@@ -68,7 +68,9 @@
 {% else %}
 <div style="text-align: start; position: static; width: 100%; font-size: xx-large; color: white; font-style: oblique;">{{ text }}</div>
   <div style="text-align: center; position: static; width: 100%; font-size: xx-large; color: white; background-color: rgb(32, 150, 218); border-radius: 10em; box-shadow:-11px 24px 62px -13px rgb(0, 0, 0) ;position: static;text-align: center ;width: 40%; font-style: oblique;">{{ text1 }} {{ city_name }}</div>
-    <table id="datatablesSimple">
+    <!-- <table id="datatablesSimple"> -->
+      <table class="table table-bordered" id="dataTable" >
+
       <thead>
         <tr>
           <th>ID</th>
